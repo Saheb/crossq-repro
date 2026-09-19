@@ -1,0 +1,34 @@
+{
+  "algo": "crossq",
+  "env": "Hopper-v5",
+  "seed": 0,
+  "steps": 300000,
+  "learning_starts": 5000,
+  "buffer_size": 1000000,
+  "batch_size": 256,
+  "gamma": 0.99,
+  "lr": 0.001,
+  "adam_beta1": 0.5,
+  "critic_hidden": [
+    512,
+    512
+  ],
+  "actor_hidden": [
+    256,
+    256
+  ],
+  "n_critics": 2,
+  "batch_norm": true,
+  "bn_momentum": 0.01,
+  "bn_warmup_steps": 100000,
+  "target_networks": false,
+  "tau": 0.005,
+  "policy_delay": 3,
+  "utd": 1,
+  "eval_every": 10000,
+  "eval_episodes": 5,
+  "device": "cpu",
+  "threads": 2,
+  "logdir": "runs",
+  "name": "crossq512"
+}
